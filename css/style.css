@@ -1,0 +1,81 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+  font-family: sans-serif; /* Fuente sencilla */
+  display: flex; /* Usamos flexbox para centrar el contenido */
+  justify-content: center; /* Centrado horizontal */
+  align-items: center; /* Centrado vertical */
+  min-height: 100vh; /* Ocupa al menos el 100% de la altura de la ventana */
+  margin: 0; /* Sin márgenes predeterminados */
+  background-color: #f4f4f4; /* Un color de fondo suave */
+}
+
+/* Estilos para el contenedor principal del selector de color */
+.contenedor-color {
+  background-color: #fff; /* Fondo blanco para el contenedor */
+  padding: 30px; /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  text-align: center; /* Centrar el texto */
+  width: 300px; /* Ancho fijo para el contenedor */
+}
+
+/* Estilos para el título */
+h1 {
+  color: #333; /* Color de texto oscuro */
+  margin-bottom: 25px; /* Espacio debajo del título */
+}
+
+/* Estilos para el input de tipo color */
+#selectorColor {
+  width: 100px; /* Ancho del input */
+  height: 100px; /* Alto del input, para que sea un cuadrado grande */
+  border: none; /* Sin borde */
+  background: none; /* Sin fondo */
+  padding: 0; /* Sin relleno */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  /* Quitamos la apariencia por defecto de algunos navegadores */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Para que el input de color se vea bien en Firefox */
+#selectorColor::-moz-color-swatch {
+  border: none;
+  border-radius: 50%; /* Lo hacemos circular */
+}
+
+/* Para que el input de color se vea bien en Chrome/Edge */
+#selectorColor::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+#selectorColor::-webkit-color-swatch {
+  border: none;
+  border-radius: 50%; /* Lo hacemos circular */
+}
+
+/* Estilos para el div que muestra el color seleccionado */
+.muestra-color {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  height: 80px; /* Altura del área de muestra */
+  margin-top: 25px; /* Espacio superior */
+  border-radius: 5px; /* Bordes redondeados */
+  display: flex; /* Usamos flexbox para centrar el texto */
+  justify-content: center; /* Centrado horizontal del texto */
+  align-items: center; /* Centrado vertical del texto */
+  color: #fff; /* Color del texto dentro de la muestra */
+  font-weight: bold; /* Texto en negrita */
+  transition: background-color 0.3s ease; /* Transición suave al cambiar el color */
+}
+
+/* Estilos para el párrafo que muestra el código hexadecimal */
+#codigoHex {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.2
+  ); /* Un fondo semitransparente para el código */
+  padding: 8px 12px; /* Relleno interno */
+  border-radius: 4px; /* Bordes redondeados */
+}
